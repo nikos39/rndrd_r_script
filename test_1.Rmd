@@ -1,0 +1,27 @@
+---
+title: "Test Drive for Git(Hub)"
+author: "nikos39"
+date: "2024-01-05"
+output: github_document
+---
+
+The test drive continues...
+
+```{r, eval=TRUE}
+test <- c(1, 4, 6, 7, 12)
+drive <- c()
+for (i in 1:length(test)) {
+  drive[i] <- paste0("The test drive no.", test[i], " ", "is magnificent!")
+  print(drive[i])
+}
+```
+
+We can make a function out of that loop!
+
+```{r}
+test_drive <- function(x) {
+  paste0("The test drive no.", x, " ", "is magnificent!")
+}
+test_drive(test)
+```
+
